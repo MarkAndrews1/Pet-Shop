@@ -12,4 +12,4 @@ class AddPet(FlaskForm):
 class EditPet(FlaskForm):
     url = StringField("Photo URL", validators=[URL(), Optional()])
     notes = TextAreaField("* Notes", validators=[Optional(), Length(min=10)])
-    available = BooleanField('Still Available?')
+    available = BooleanField('Still Available?') 
